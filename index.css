@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-shadow:  0 10px 8px 0 rgba(0, 0, 0, 0.2);   
+}
+.menubar{
+    padding: 10px;
+}
+.header > div{
+    width: 100px;
+    margin: 5px;
+}
+div.icon{
+    margin-top: 20px;
+}
+.dashboard{
+   padding-left: 20px;
+   margin-top: 50px;
+   
+}
+.dashboard > div{
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+}
+div.active{
+    color: dodgerblue;
+}
+.column{
+    float: left;
+    width: 18%;
+    padding:20px;
+}
+.column.content{
+    
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.column.cart1{
+    width: 30%;
+    float: left;
+}
+.column.cart2{
+    width: 40%;   
+}
+.column.cart3{
+    width: 30%;
+    float: left;
+}
+.content{
+    background-color: rgba(240,240,240);
+    box-shadow: inset 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+div.card1{
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: start;
+    background-color: white;
+  }
+.card2{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    text-align: start;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.card3{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    text-align: start;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+  .user-icon{
+      padding: 10px;
+  }
+  .head{
+      font-weight:700;
+  }
+  .button{
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px;
+    padding:12px ;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button1{
+      background:linear-gradient(to right, #33ccff 0%, #ff66cc 100%);
+  }
+  .button2{
+    background:linear-gradient(to right, #33ccff 0%, #66ffff 100%);
+}
+.button3{
+    background:linear-gradient(to right, #33ccff 0%, #cc00cc 100%);
+}
+.button4{
+    background:linear-gradient(to right, #cc00ff 0%, #9933ff 100%);
+    height: 25%;
+    width: 40%;
+    color: white;
+    font-weight: bold;
+}
+.button5{
+    background:linear-gradient(to bottom, #33ccff 0%, #00ffff 100%);
+    height: 23%;
+    width: 40%;
+    color: white;
+    font-weight: bold;
+}
+.arrow{
+    padding-left: 200px;
+}
+
+@media only screen and (max-width:700px){
+    div.column.first{
+        width: 100%;
+        display: none;
+    }
+    div > h3{
+        display: none;
+    }
+    div.column.content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    
+  }
+  .column.cart1{
+    width: 100%;
+    float: left;
+}
+.column.cart2{
+    width: 100%;   
+}
+.column.cart3{
+    width: 100%;
+    float: left;
+}
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
